@@ -1,6 +1,9 @@
  h1 {
      color: black;
-     text-size-adjust: 200%;
+     font-size: 300%;
      text-align-last: center;
-
+     font-family: cursive;
+     border: solid 1px gray;
+     border-radius: 20px;
+     box-shadow: 2px 2px 5px gray;
  }
