@@ -18,7 +18,10 @@
     font-family: cursive;
 
  }
- #copyright {
+ *#copyright {
      text-align-last: center;
      font-size: small;
  }
+p {
+    text-align-last: center;
+}
