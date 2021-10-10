@@ -6,6 +6,7 @@
      border: solid 1px gray;
      border-radius: 50px 50px;
      box-shadow: 3px 3px 5px rgb(92, 90, 90);
+     
  }
  main {
      border: solid 1px gray;
@@ -26,5 +27,5 @@ p {
     text-align-last: center;
 }
 .page {
-    color: rgb(71, 67, 67);
+    background-color: rgb(71, 67, 67);
 }
