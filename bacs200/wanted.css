@@ -26,6 +26,9 @@
 p {
     text-align-last: center;
 }
-.page {
-    background-color: rgb(71, 67, 67);
+*#bonus {
+    font-style: italic;
+    font-family: sans-serif;
+    color: blueviolet;
+    font-size: smaller;
 }
