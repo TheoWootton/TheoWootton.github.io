@@ -6,16 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BoomBadaBam</title>
 </head>
-<style>
-     :root {
-  --bg: #000000;
-  --card: #0a2e7a;
-  --text: #e5e7eb;
-  --muted: #9ca3af;
-  --accent: #38bdf8;
-  --accent-glow: rgba(56, 189, 248, 0.4);
-     }
-</style>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -30,7 +20,48 @@
     <h2>Card Title</h2>
     <p1>This card changes color when the theme changes.</p1>
   </div>
+<style>
+     :root {
+  --bg: #000000;
+  --card: #0a2e7a;
+  --text: #e5e7eb;
+  --muted: #9ca3af;
+  --accent: #38bdf8;
+  --accent-glow: rgba(56, 189, 248, 0.4);
+     }
+.dark {
+  --bg: #0b1220;
+  --text: #e5e7eb;
+  --card: #111827;
+  --accent: #38bdf8;
+}
 
+/* ---------- STYLES ---------- */
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: system-ui, sans-serif;
+  padding: 2rem;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+button {
+  background: var(--accent);
+  color: white;
+  border: none;
+  padding: 0.6rem 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-bottom: 2rem;
+}
+
+.card {
+  background: var(--card);
+  padding: 1.5rem;
+  border-radius: 12px;
+  transition: background 0.3s ease;
+}
+</style>
   <script>
     function toggleTheme() {
       document.body.classList.toggle("dark");
@@ -53,12 +84,6 @@
     }
 </script>
 <style>
-   body {
-        font-family: cursive, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        margin: 20px;
-        background-color: var(--bg);
-    }
-
      p {
         color: #ffffff;
         text-align: center;
@@ -70,12 +95,13 @@
         list-style-type: none;
         padding: 0;
     }
-    li {
+  /*Provides the Link to further files */
+    li { 
         margin: 10px 0;
         color: #ffffff;
         justify-content: center;
         text-align: center;
-    }
+    } 
  </style>
  <style>
     .center {
