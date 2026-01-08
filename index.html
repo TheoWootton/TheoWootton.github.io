@@ -7,7 +7,15 @@
     <title>BoomBadaBam</title>
 </head>
 <style>
-    body {
+   :root {
+  --bg: #1a0cdd;
+  --card: #0a2e7a;
+  --text: #e5e7eb;
+  --muted: #9ca3af;
+  --accent: #38bdf8;
+  --accent-glow: rgba(56, 189, 248, 0.4);
+}
+   body {
         font-family: cursive, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         margin: 20px;
         background-color: #000000;  
@@ -43,17 +51,159 @@
         text-align: center;
         justify-content: center;
     }
- img {
-    color: transparent;
- }
+ 
  </style>
 <div class = "center">
     <h1>Theodore Wootton</h1>
 </div>
-<p>Welocme to my practice repository. There are some pretty fun things in here subjective of course. 
+<p>Welcome to my practice repository. There are some pretty fun things in here subjective of course. 
     Click the link below to see my projects I have worked on over the years!</p>
 <ul>
     <li><a href="https://theowootton.github.io/bacs200/index.html">CLICK HERE to view my projects</a></li>
     <li><img src="https://github.com/TheoWootton/TheoWootton.github.io/blob/main/kali-glitchsea.jpg?raw=true" alt="Kali Linux" width="500" height="300"></li>
 </body>
 </html>
+
+:root {
+  --bg: #0b1220;
+  --card: #111827;
+  --text: #e5e7eb;
+  --muted: #9ca3af;
+  --accent: #38bdf8;
+  --accent-glow: rgba(56, 189, 248, 0.4);
+}
+
+/* ---------- BASE ---------- */
+body {
+  font-family: "Inter", system-ui, sans-serif;
+  background: radial-gradient(circle at top, #0f172a, var(--bg));
+  color: var(--text);
+  min-height: 100vh;
+  line-height: 1.6;
+}
+
+/* ---------- LAYOUT ---------- */
+main {
+  max-width: 1000px;
+  margin: auto;
+  padding: 3rem 1.5rem;
+}
+
+header {
+  margin-bottom: 3rem;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+header p {
+  color: var(--muted);
+  margin-top: 0.5rem;
+}
+
+/* ---------- NAV ---------- */
+nav {
+  margin-top: 1.5rem;
+}
+
+nav a {
+  margin-right: 1.5rem;
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 500;
+  position: relative;
+}
+
+nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0;
+  height: 2px;
+  background: var(--accent);
+  transition: width 0.2s ease;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+
+/* ---------- PROJECT GRID ---------- */
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+/* ---------- PROJECT CARD ---------- */
+.project {
+  background: linear-gradient(180deg, #111827, #0b1220);
+  border-radius: 16px;
+  padding: 1.75rem;
+  box-shadow:
+    0 0 0 1px rgba(255,255,255,0.04),
+    0 15px 30px rgba(0,0,0,0.4);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.project:hover {
+  transform: translateY(-6px);
+  box-shadow:
+    0 0 0 1px var(--accent),
+    0 0 30px var(--accent-glow);
+}
+
+.project h2 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.project p {
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+/* ---------- LINKS & BUTTONS ---------- */
+.project a {
+  display: inline-block;
+  margin-top: 1rem;
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.project a:hover {
+  text-decoration: underline;
+}
+
+/* ---------- IMAGES ---------- */
+img {
+  max-width: 100%;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+/* ---------- FOOTER ---------- */
+footer {
+  text-align: center;
+  color: var(--muted);
+  font-size: 0.85rem;
+  margin-top: 4rem;
+}
+
+/* ---------- ACCESSIBILITY ---------- */
+a:focus {
+  outline: 2px solid var(--accent);
+  outline-offset: 4px;
+}
+
+/* ---------- MOBILE ---------- */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 2rem;
+  }
+}
