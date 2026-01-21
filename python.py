@@ -28,10 +28,27 @@
 #z = round(x / y, 3)# Rounds to 3 decimal places(can change number)
 #print(z) #can also do print (f"{z:.2f}") to format to 2 decimal places
 
-def hello (to="world"):
-    print ("hello, ", to)
-hello ()
-name = input ("Name please>").strip().title()
-hello (name)
+#def hello (to="world"):
+    #print ("hello, ", to)
+#hello ()
+#name = input ("Name please>").strip().title()
+#hello (name)
 # resume vid at 1:45:15
-just = input ("What do you want to say? ")
+#just = input ("What do you want to say? ")
+
+#def main():#provides structure to program
+    #name=input("Enter your name: ").strip().title()
+    #hello(name)#calls hello function with name argument
+
+#def hello(to="World"):#f with default argument
+    #print("Hello,", to)
+#main()#calls main function to start program after it is defined
+
+def main():#provides structure to program
+    x = int(input("What's x?"))#gets user input
+    print("x squared is", square(x))#calls square function with x argument
+def square(n):#function to square number
+    return n * n#can also use return n ** 2 as well as pow(n, 2)
+main()
+
+#resume vid at 1:50:24
