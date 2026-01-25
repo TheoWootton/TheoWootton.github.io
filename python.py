@@ -44,11 +44,44 @@
     #print("Hello,", to)
 #main()#calls main function to start program after it is defined
 
-def main():#provides structure to program
-    x = int(input("What's x?"))#gets user input
-    print("x squared is", square(x))#calls square function with x argument
-def square(n):#function to square number
-    return n * n#can also use return n ** 2 as well as pow(n, 2)
-main()
+#def main():#provides structure to program
+#    x = int(input("What's x?"))#gets user input
+ #   print("x squared is", square(x))#calls square function with x argument
+#def square(n):#function to square number
+ #   return n * n#can also use return n ** 2 as well as pow(n, 2)
+#main()
 
-#resume vid at 1:50:24
+#Boolean expressions
+#x = int(input("What's x?"))#gets user input
+#y = int(input("What's y?")) #get second user input
+#if x < y:
+#    print("x is less than y")
+#if x > y:
+ #   print("x is greater than y")
+#if x == y:
+#    print("x is equal to y")
+#if x != y:
+ #   print("x is not equal to y")  
+#can also use elif and else for more complex conditions 
+#elif end the program if previous condition is met
+
+#x =int(input("What's x?"))#gets user input
+#y = int(input("What's y?")) #get second user input
+#if x < y:
+ #   print("x is less than y")
+#elif x > y:
+ #   print("x is greater than y")
+#else:
+#    print("x is equal to y")
+#x =int(input("What's x?"))#gets user input
+#y = int(input("What's y?"))
+#if x < y or X> y:
+ #   print("x isn't equal to y")
+#lse:
+#    print("x is equal to y")
+x =int(input("What's x?"))#gets user input
+y = int(input("What's y?"))
+if x != y:
+    print("x is not equal to y")
+else:
+    print("x is equal to y")
