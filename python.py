@@ -85,3 +85,4 @@ if x != y:
     print("x is not equal to y")
 else:
     print("x is equal to y")
+# resume video at 2:15:35
